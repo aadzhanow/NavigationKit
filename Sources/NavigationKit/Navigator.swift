@@ -10,6 +10,8 @@ import SwiftUI
 public class Navigator<Path: Hashable & CaseIterable & Identifiable>: ObservableObject {
     @Published public var path = NavigationPath()
     
+    public init() {}
+    
     public func pushView(_ destination: Path) {
         path.append(destination)
     }
