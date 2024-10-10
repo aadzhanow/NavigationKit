@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct NavigatorStack<Path: NavigationProtocol, Content: View>: View {
-    @ObservedObject var navigator: Navigator<Path>
+    @ObservedObject public var navigator: Navigator<Path>
     let content: () -> Content
     
     public var body: some View {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 public class Navigator<Path: Hashable & CaseIterable & Identifiable>: ObservableObject {
-    @Published var path = NavigationPath()
+    @Published public var path = NavigationPath()
     
     public func pushView(_ destination: Path) {
         path.append(destination)

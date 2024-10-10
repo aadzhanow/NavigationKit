@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		74C0C2832CB8195D00B71AED /* ExampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0C2802CB8195D00B71AED /* ExampleAppApp.swift */; };
 		74C0C2852CB8195D00B71AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C0C27E2CB8195D00B71AED /* Assets.xcassets */; };
+		74C0C2872CB8268A00B71AED /* NavigationPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0C2862CB8268900B71AED /* NavigationPaths.swift */; };
+		74C0C2892CB8269800B71AED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0C2882CB8269700B71AED /* MainView.swift */; };
+		74C0C28B2CB826A800B71AED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0C28A2CB826A600B71AED /* SettingsView.swift */; };
+		74C0C28D2CB826BE00B71AED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0C28C2CB826BD00B71AED /* ProfileView.swift */; };
+		74C0C2922CB8271400B71AED /* NavigationKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74C0C2912CB8271400B71AED /* NavigationKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74C0C26B2CB8195700B71AED /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C0C27E2CB8195D00B71AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74C0C2802CB8195D00B71AED /* ExampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppApp.swift; sourceTree = "<group>"; };
+		74C0C2862CB8268900B71AED /* NavigationPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPaths.swift; sourceTree = "<group>"; };
+		74C0C2882CB8269700B71AED /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74C0C28A2CB826A600B71AED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74C0C28C2CB826BD00B71AED /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C0C2922CB8271400B71AED /* NavigationKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +57,30 @@
 		74C0C2812CB8195D00B71AED /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				74C0C2802CB8195D00B71AED /* ExampleAppApp.swift */,
+				74C0C28E2CB826D200B71AED /* App */,
+				74C0C28F2CB826D600B71AED /* Views */,
 				74C0C27E2CB8195D00B71AED /* Assets.xcassets */,
 			);
 			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		74C0C28E2CB826D200B71AED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				74C0C2802CB8195D00B71AED /* ExampleAppApp.swift */,
+				74C0C2862CB8268900B71AED /* NavigationPaths.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74C0C28F2CB826D600B71AED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74C0C28C2CB826BD00B71AED /* ProfileView.swift */,
+				74C0C28A2CB826A600B71AED /* SettingsView.swift */,
+				74C0C2882CB8269700B71AED /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +100,7 @@
 			);
 			name = ExampleApp;
 			packageProductDependencies = (
+				74C0C2912CB8271400B71AED /* NavigationKit */,
 			);
 			productName = ExampleApp;
 			productReference = 74C0C26B2CB8195700B71AED /* ExampleApp.app */;
@@ -99,6 +130,9 @@
 			);
 			mainGroup = 74C0C2622CB8195700B71AED;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				74C0C2902CB8271400B71AED /* XCRemoteSwiftPackageReference "NavigationKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 74C0C26C2CB8195700B71AED /* Products */;
 			projectDirPath = "";
@@ -125,6 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C0C2872CB8268A00B71AED /* NavigationPaths.swift in Sources */,
+				74C0C28B2CB826A800B71AED /* SettingsView.swift in Sources */,
+				74C0C28D2CB826BE00B71AED /* ProfileView.swift in Sources */,
+				74C0C2892CB8269800B71AED /* MainView.swift in Sources */,
 				74C0C2832CB8195D00B71AED /* ExampleAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +304,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -273,6 +312,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aadzhanow.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +343,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aadzhanow.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74C0C2902CB8271400B71AED /* XCRemoteSwiftPackageReference "NavigationKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aadzhanow/NavigationKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74C0C2912CB8271400B71AED /* NavigationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74C0C2902CB8271400B71AED /* XCRemoteSwiftPackageReference "NavigationKit" */;
+			productName = NavigationKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74C0C2632CB8195700B71AED /* Project object */;
 }
