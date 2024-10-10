@@ -8,8 +8,13 @@
 import SwiftUI
 
 public struct NavigatorStack<Path: NavigationProtocol, Content: View>: View {
-    @ObservedObject public var navigator: Navigator<Path>
+    @ObservedObject var navigator: Navigator<Path>
     let content: () -> Content
+    
+    public init(navigator: Navigator<Path>, @ViewBuilder content: @escaping () -> Content) {
+        self.navigator = navigator
+        self.content = content
+    }
     
     public var body: some View {
         NavigationStack(path: $navigator.path) {
