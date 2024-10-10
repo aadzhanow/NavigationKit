@@ -1,8 +1,52 @@
+# User-specific files
 .DS_Store
-/.build
-/Packages
-xcuserdata/
+*.swp
+*.lock
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+*.xcworkspace/
+*.xcuserdata/
+*.xccheckout/
+*.xcscmblueprint/
 DerivedData/
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-.netrc
+
+# Example App build artifacts
+ExampleApp/build/
+ExampleApp/DerivedData/
+ExampleApp/*.xcworkspace
+ExampleApp/*.xcuserdata/
+
+# IDE specific
+.idea/
+.vscode/
+
+# Generated files
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Build artifacts
+build/
+Pods/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~.nib~
+*~.lock~
+
+# Test and coverage files
+*.xctest/
+*.gcda
+*.gcno
+*.coverage
