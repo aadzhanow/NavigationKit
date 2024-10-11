@@ -8,7 +8,7 @@
 import SwiftUI
 import NavigationKit
 
-enum NavigationPaths: NavigationProtocol {
+enum NavigationPaths: NavigationDestionation {
     case settings
     case profile
     
