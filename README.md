@@ -12,18 +12,16 @@
 
 ### 1\. Define Navigation Paths
 
-Create an enum conforming to `NavigationProtocol`, where each case represents a view in the navigation stack.
+Create an enum conforming to `NavigationDestination`, where each case represents a view in the navigation stack.
 
 ```swift
 import SwiftUI
 import NavigationKit
 
-enum NavigationPaths: NavigationProtocol {
+enum NavigationPaths: NavigationDestination {
     case settings
     case profile
-    
-    var id: Self { self }
-    
+        
     var body: some View {
         switch self {
         case .settings:
