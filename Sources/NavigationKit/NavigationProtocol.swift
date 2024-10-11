@@ -7,4 +7,10 @@
 
 import SwiftUI
 
-public typealias NavigationProtocol = View & Identifiable & Hashable & CaseIterable
+public typealias NavigationProtocol = View & Identifiable & CaseIterable
+
+public protocol Navigation: NavigationProtocol {}
+
+public extension Navigation {
+    var id: UUID { UUID() }
+}
