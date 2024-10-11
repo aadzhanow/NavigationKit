@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public typealias NavigationProtocol = View & Identifiable & CaseIterable
+public typealias NavigationProtocol = View & Identifiable & Hashable & CaseIterable
 
 public protocol Navigation: NavigationProtocol {}
 
