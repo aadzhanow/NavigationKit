@@ -9,8 +9,8 @@ import SwiftUI
 
 public typealias NavigationProtocol = View & Identifiable & Hashable & CaseIterable
 
-public protocol Navigation: NavigationProtocol {}
+public protocol NavigationDestionation: NavigationProtocol {}
 
-public extension Navigation {
+public extension NavigationDestionation {
     var id: UUID { UUID() }
 }
