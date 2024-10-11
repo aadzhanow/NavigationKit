@@ -16,6 +16,12 @@ public class Navigator<Path: Hashable & CaseIterable & Identifiable>: Observable
         path.append(destination)
     }
     
+    public func popView() {
+        if !path.isEmpty {
+            path.removeLast()
+        }
+    }
+    
     public func popToRoot() {
         path.removeLast(path.count)
     }
